@@ -1,0 +1,25 @@
+%form__input {
+    width: 270px;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 15px;
+    margin: 0 0 10px;
+}
+
+.form {
+    padding: 0;
+    margin: 27px 0 0;
+}
+
+.form__input_light-style {
+    @extend %form__input;
+    border: 1px solid #E5E5E5;
+
+}
+
+.form__input_dark-style {
+    @extend %form__input;
+    border: 0;
+    background: #373737;
+}

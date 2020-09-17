@@ -1,0 +1,27 @@
+.header {
+    background-color: black;
+    margin: 0 auto 0;
+}
+
+.header__container {
+    max-width: $max-width;
+    padding: 35px 20px;
+    line-height: 18px;
+    align-items: center;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 24px;
+    margin: auto;
+}
+
+.header__search {
+    padding-right: 5px;
+    width: 18px;
+    height: 18px;
+    justify-self: right;
+    transition: opacity 0.3s linear;
+    &:hover {
+        opacity: 0.7;
+    }
+}

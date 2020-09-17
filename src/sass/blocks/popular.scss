@@ -1,0 +1,55 @@
+
+.popular {
+    color: $black-text-color;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 80px;
+}
+
+.popular__title {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 39px;
+    margin: 0 0 27px;
+}
+
+.popular__block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular__item {
+    position: relative;
+    width: calc((100%-30px)/4);
+    display: flex;
+    flex-direction: column;
+}
+
+.popular__img {
+    border-radius: 5px;
+    max-width: 270px;
+    max-height: 195px;
+    margin-bottom: 20px;
+}
+
+.popular__label {
+    position: absolute;
+    font-size: 12px;
+    color: white;
+    top: 20px;
+    left: 20px;
+}
+
+.popular__text {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 28px;
+    margin: 0 0 10px;
+    max-width: 250px;
+}
+
+.popular__subtitle {
+    margin: 0;
+    font-style: italic;
+    color: $main-text-color;
+}

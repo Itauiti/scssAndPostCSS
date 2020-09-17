@@ -1,0 +1,19 @@
+.menu__container {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: white;
+    margin: 0 20px 0;
+    transition: opacity 0.3s linear;
+    &:hover {
+        opacity: 0.6;
+    }
+}
+
+

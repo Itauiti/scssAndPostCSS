@@ -1,0 +1,34 @@
+$main-text-color: #666666;
+$black-text-color: #171717;
+$subtitle-color: #999999;
+$main-color: #4A90E2;
+$grey-tags-color: #EBEBEB;
+$footer-grey-text-color: #CECECE;
+
+$max-width: 1210px;
+
+.page {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 18px;
+    color: white;
+    margin: 0 auto 0;
+}
+
+.main {
+    max-width: $max-width;
+    padding: 35px 20px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.main-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+

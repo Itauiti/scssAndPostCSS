@@ -1,0 +1,21 @@
+%rectangle {
+    border-radius: 3px;
+    margin: 0;
+}
+.main-color-rectangle {
+    @extend %rectangle;
+    background-color: $main-color;
+    padding: 4px 12px;
+}
+
+.logo-rectangle {
+    @extend %rectangle;
+    background-color: $main-color;
+    padding: 3px 6px;
+}
+
+.grey-tags-rectangle {
+    @extend %rectangle;
+    background-color: $grey-tags-color;
+    padding: 7px 16px;
+}
