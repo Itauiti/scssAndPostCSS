@@ -190,14 +190,68 @@
 }
 
 .header__search {
-  padding-right: 5px;
-  width: 18px;
-  height: 18px;
+  transform: translate(-1%);
   justify-self: right;
-  transition: opacity 0.3s linear;
+  box-sizing: border-box;
 }
-.header__search:hover {
-  opacity: 0.7;
+
+.header__search-box input[type=text] {
+  border: none;
+  background: none;
+  z-index: 1;
+  width: 25px;
+  height: 25px;
+  transition: all 0.25s ease-in 0.25s;
+  color: transparent;
+  font-size: 14px;
+  line-height: 25px;
+}
+.header__search-box input[type=text]:hover {
+  cursor: pointer;
+}
+.header__search-box input[type=text]:hover:focus {
+  cursor: text;
+}
+.header__search-box input[type=text]:hover + span {
+  background: #373737;
+}
+.header__search-box input[type=text]:focus {
+  width: 200px;
+  padding: 0 10px;
+  outline: none;
+  color: black;
+  background: none;
+  color: white;
+}
+.header__search-box input[type=text]:focus + span {
+  width: 200px;
+}
+.header__search-box input[type=text]:focus + span::before {
+  width: 2px;
+  opacity: 0;
+  transition: all 0.25s ease-in;
+}
+.header__search-box input[type=text] + span {
+  z-index: -1;
+  position: absolute;
+  border: 1.8px solid white;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  transition: all 0.25s ease-in 0.25s;
+  border-radius: 7px;
+  left: 0;
+}
+.header__search-box input[type=text] + span::before {
+  transition: all 0.25s ease-in 0.5s;
+  transform-origin: left top;
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 5px;
+  border-radius: 7px;
+  background: #4A90E2;
+  transform: rotate(45deg) translate(26px, -2px);
 }
 
 .posts-list {
