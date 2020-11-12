@@ -1,4 +1,4 @@
-# **GitHub Explorer**
+# **scssAndPostCSS**
 Версия 0.0.1
 
 ## О проекте:
